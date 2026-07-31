@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>a7x-rudolf · Rudolf</title>
-  <meta name="description" content="Rudolf — IT Support & Multi-Platform Developer. Cashflow Family, WindowsDoctorAI." />
+  <meta name="description" content="Rudolf — IT Support & Multi-Platform Developer. Cashflow Family, WindowsDoctorAI, File Manager." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -293,7 +293,7 @@
     }
 
     .accordion-item.open .accordion-body {
-      max-height: 500px;
+      max-height: 600px;
       padding: 0 18px 16px;
     }
 
@@ -601,10 +601,11 @@
           <div class="accordion-item">
             <button class="accordion-header" onclick="toggleAccordion(this)">
               <span class="label">Android Apps</span>
-              <span class="badge count">1</span>
+              <span class="badge count">2</span>
               <span class="arrow-toggle">▾</span>
             </button>
             <div class="accordion-body">
+              <!-- Cashflow Family -->
               <a href="https://github.com/a7x-rudolf/Cashflow-Family/releases/latest" target="_blank" rel="noopener" class="sub-row">
                 <span class="sub-icon">apk</span>
                 <div class="sub-content">
@@ -617,7 +618,27 @@
               <a href="https://github.com/a7x-rudolf/Cashflow-Family" target="_blank" rel="noopener" class="sub-row">
                 <span class="sub-icon">src</span>
                 <div class="sub-content">
-                  <div class="sub-title">Source Code</div>
+                  <div class="sub-title">Source Code (Cashflow)</div>
+                  <div class="sub-desc">Lihat kode di GitHub</div>
+                </div>
+                <span class="sub-tag repo">repo</span>
+                <span class="sub-arrow">→</span>
+              </a>
+
+              <!-- File Manager -->
+              <a href="https://github.com/a7x-rudolf/File-Manager/releases/download/v1.0.0/File.Manager.apk" target="_blank" rel="noopener" class="sub-row">
+                <span class="sub-icon">apk</span>
+                <div class="sub-content">
+                  <div class="sub-title">File Manager</div>
+                  <div class="sub-desc">Download APK — aplikasi pengelola file</div>
+                </div>
+                <span class="sub-tag" id="version-filemanager">⟳</span>
+                <span class="sub-arrow">→</span>
+              </a>
+              <a href="https://github.com/a7x-rudolf/File-Manager" target="_blank" rel="noopener" class="sub-row">
+                <span class="sub-icon">src</span>
+                <div class="sub-content">
+                  <div class="sub-title">Source Code (File Manager)</div>
                   <div class="sub-desc">Lihat kode di GitHub</div>
                 </div>
                 <span class="sub-tag repo">repo</span>
@@ -714,6 +735,9 @@
       const repos = [{
         id: 'version-cashflow',
         repo: 'a7x-rudolf/Cashflow-Family'
+      }, {
+        id: 'version-filemanager',
+        repo: 'a7x-rudolf/File-Manager'
       }, {
         id: 'version-doctor',
         repo: 'a7x-rudolf/WindowsDoctorAI'
